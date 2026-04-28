@@ -458,3 +458,9 @@ button[type="submit"]:hover {
     }
     
 }
+
+.card span {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    font-style: italic;
+}
