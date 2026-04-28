@@ -522,3 +522,45 @@ nav a[aria-current="page"]::after {
     transform: translateY(-2px);
     border-color: var(--color-accent);
 }
+
+/* == 404 == */
+#not-found {
+  text-align: center;
+  padding: 100px 24px;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+#not-found h1 {
+  font-size: 8rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+#not-found h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+#not-found p {
+  color: var(--color-text-secondary);
+  margin-bottom: 32px;
+}
+
+.btn-home {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: white;
+  padding: 12px 24px;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn-home:hover {
+  background-color: var(--color-accent-hover);
+  color: white;
+  text-decoration: none;
+}
