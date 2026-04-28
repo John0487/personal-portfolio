@@ -464,3 +464,61 @@ button[type="submit"]:hover {
     color: var(--color-text-secondary);
     font-style: italic;
 }
+
+/* == ANIMACIONES == */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#hero {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+#content {
+    animation: fadeInUp 0.6s ease 0.2s forwards;
+    opacity: 0;
+}
+
+#reviews {
+    animation: fadeInUp 0.6s ease 0.4s forwards;
+    opacity: 0;
+}
+
+.card {
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+}
+
+/* Underline animado en navbar */
+nav a {
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-accent);
+    transition: width 0.2s ease;
+}
+
+nav a:hover::after,
+nav a[aria-current="page"]::after {
+    width: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+    border-color: var(--color-accent);
+}
