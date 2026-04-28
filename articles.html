@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title>John Carreño - Articles</title>
+
+        <meta name="description" content="Articles written by John Carreño about frontend development, HTML, CSS and JavaScript.">
+        <meta name="keywords" content="articles, blog, frontend, HTML, CSS, JavaScript, John Carreño">
+        <meta name="author" content="John Carreño">
+
+        <meta property="og:title" content="John Carreño - Articles">
+        <meta property="og:description" content="Articles written by John Carreño about frontend development, HTML, CSS and JavaScript.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://john0487.github.io/html-portfolio/articles.html">
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico?v=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div>John Carreño</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="articles.html" aria-current="page">Articles</a>
+                <a href="contact.html">Contact</a>
+                <button id="theme-toggle">🌙 Dark</button>
+            </nav>
+        </header>
+        
+        <main>
+            <section>
+                <h1>Articles</h1>
+                <p>Here are some of the articles I have written.</p>
+            </section>
+
+            <section>
+                <article>
+                    <h2>Getting Started with HTML</h2>
+                    <p>Published on <time datetime="2025-01-10">January 10, 2025</time></p>
+                    <p>A beginner's guide to structuring web pages with semantic HTML.</p>
+                    <a href="#">Read More</a>
+                </article>
+
+                <article>
+                    <h2>Understanding CSS Flexbox</h2>
+                    <p>Publised on <time datetime="2025-02-15">February 15, 2025</time></p>
+                    <p>A deep dive into CSS Flexbox and how to use it for layouts.</p>
+                    <a href="#">Read More</a>
+                </article>
+
+                <article>
+                    <h2>JavaScript for Beginners</h2>
+                    <p>Published on <time datetime="2025-03=20">March 20, 2025</time></p>
+                    <p>An introduction to JavaScript and how to use it to add interactivity to your website</p>
+                    <a href="#">Read More</a>
+                </article>
+            </section>
+        </main>
+
+        <script>
+            const button = document.getElementById('theme-toggle');
+
+            button.addEventListener('click', function() {
+                document.body.classList.toggle('dark');
+
+                if (document.body.classList.contains('dark')) {
+                    button.textContent = '☀️ Light';
+                } else {
+                    button.textContent = '🌙 Dark';
+                }
+            });
+        </script>
+
+    </body>
+</html>

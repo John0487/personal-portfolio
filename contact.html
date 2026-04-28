@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title>John Carreño - Contact</title>
+
+        <meta name="description" content="Get in touch with John Carreño for project inquiries or collaborations.">
+        <meta name="keywords" content="contact, John Carreño, frontend developer, hire">
+        <meta name="author" content="John Carreño">
+
+        <meta property="og:title" content="John Carreño - Contact">
+        <meta property="og:description" content="Get in touch with John Carreño for project inquiries or collaborations.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://john0487.github.io/html-portfolio/contact.html">
+        
+        <link rel="icon" type="image/x-icon" href="favicon.ico?v=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div>John Carreño</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="articles.html">Articles</a>
+                <a href="contact.html" aria-current="page">Contact</a>
+                <button id="theme-toggle">🌙 Dark</button>
+            </nav>
+        </header>
+        
+        <main>
+            <section>
+                <h1>Contact</h1>
+                <p>Feel free to reach out to me for any inquiries or collaborations.</p>
+            </section>
+
+            <section>
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="593718c2-9d42-4d93-b41c-965a1830e7de">
+
+                    <div>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" requeried>
+                    </div>
+
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone Number (optional)</label>
+                        <input type="tel" id="phone" placeholder="+593 99 999 9999">
+                    </div>
+
+                    <div>
+                        <label for="inquiry">Type of Inquiry</label>
+                        <select id="inquiry" name="inquiry" required>
+                            <option value="">Select an option</option>
+                            <option value="project">Project Collaboration</option>
+                            <option value="job">Job Opportunity</option>
+                            <option value="freelance">Freelance Work</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                    </div>
+
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <script>
+            const button = document.getElementById('theme-toggle');
+
+            button.addEventListener('click', function() {
+                document.body.classList.toggle('dark');
+
+                if (document.body.classList.contains('dark')) {
+                    button.textContent = '☀️ Light';
+                } else {
+                    button.textContent = '🌙 Dark';
+                }
+            });
+        </script>
+
+    </body>
+</html>

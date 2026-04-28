@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title>John Carreño - Projects</title>
+
+        <meta name="description" content="Projects built by John Carreño. HTML, CSS and JavaScript projects.">
+        <meta name="keywords" content="projects, frontend, HTML, CSS, JavaScript, John Carreño">
+        <meta name="author" content="John Carreño">
+
+        <meta property="og:title" content="John Carreño - Projects">
+        <meta property="og:description" content="Projects built by John Carreño. HTML, CSS and JavaScript projects.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://john0487.github.io/html-portfolio/projects.html">
+    
+        <link rel="icon" type="image/x-icon" href="favicon.ico?v=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div>John Carreño</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="projects.html" aria-current="page">Projects</a>
+                <a href="articles.html">Articles</a>
+                <a href="contact.html">Contact</a>
+                <button id="theme-toggle">🌙 Dark</button>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h1>Projects</h1>
+                <p>Here are some of the projects I have worked on.</p>
+            </section>
+
+            <section>
+                <article>
+                    <h2>HTML Only Portfolio</h2>
+                    <p>A personal portfolio website built with only HTML, no styling.</p>
+                    <a href="#">View Project</a> 
+                </article>
+
+                <article>
+                    <h2>Quiz App</h2>
+                    <p>A quiz application with multiple choice questions.</p>
+                    <a href="#">View Project</a>
+                </article>
+
+                <article>
+                    <h2>Countdown Timer</h2>
+                    <p>A countdown timer that counts down to a specific date.</p>
+                    <a href="#">View Project</a>
+                </article>
+
+                <article>
+                    <h2>Product Upcoming Page</h2>
+                    <p>A coming soon page for a product launch.</p>
+                    <a href="#">View Project</a>
+                </article>
+            </section>
+        </main>
+
+        <script>
+            const button = document.getElementById('theme-toggle');
+
+            button.addEventListener('click', function() {
+                document.body.classList.toggle('dark');
+
+                if (document.body.classList.contains('dark')) {
+                    button.textContent = '☀️ Light';
+                } else {
+                    button.textContent = '🌙 Dark';
+                }
+            });
+        </script>
+
+    </body>
+</html>

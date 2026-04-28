@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title>John Carreño - Developer</title>
+
+        <meta name="description" content="John Carreño's personal portfolio. Frontend developer with experience in HTML, CSS and JavaScript.">
+        <meta name="keywords" content="frontend developer, portfolio, HTML, CSS, JavaScript, John Carreño">
+        <meta name="author" content="John Carreño">
+
+        <meta property="og:title" content="John Carreño - Frontend Developer">
+        <meta property="og:description" content="John Carreño's personal portfolio. Frontend developer with experience in HTML, CSS and JavaScript.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://john0487.github.io/html-portfolio/">
+    
+        <link rel="icon" type="image/x-icon" href="favicon.ico?v=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div>John Carreño</div>
+            <nav>
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="articles.html">Articles</a>
+                <a href="contact.html">Contact</a>
+                <button id="theme-toggle">🌙 Dark</button>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero">
+                <h1>Developer</h1>
+                <p>html only with proper layout, no styling</p>
+            </section>
+
+            <div id="content">
+                <aside id="projects-sidebar">
+                    <h2>Projects</h2>
+                    <ul>
+                        <li><a href="projects.html">HTML Only Portfolio</a></li>
+                        <li><a href="projects.html">Calculator</a></li>
+                        <li><a href="projects.html">Quiz App</a></li>
+                        <li><a href="projects.html">Countdown Timer</a></li>
+                        <li><a href="projects.html">Product Upcoming Page</a></li>
+                    </ul>
+                </aside>
+            
+
+                <section id="work-experience">
+                    <h2>Work Experience</h2>
+
+                    <article>
+                        <h3>roadmap.sh</h3>
+                        <p>Solved all the frontend projects</p>
+                        <a href="#">Visit my Profile</a>
+                    </article>
+
+                    <article>
+                        <h3>OpenSource Work</h3>
+                        <p>Contributed to 50 opensource projects. Made my own projects with 200 Github Stars.</p>
+                        <a href="#">Visit my GitHub Profile</a>
+                    </article>
+                </section>
+
+                <aside id="education">
+                    <h2>Education</h2>
+                    <p>Graduated with 3.78 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+                    <h3>Courses I took:</h3>
+                    <ul>
+                        <li>Object Oriented Programming</li>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Web Engineering</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Human Computer Interaction</li>
+                        <li>Computer Graphics</li>
+                        <li>Database Management Systems</li>
+                        <li>Distributed Database Systems</li>
+                        <li>Discreet Mathematics</li>
+                    </ul>
+                </aside>
+            </div>
+
+            <section id="reviews">
+                <h2>Reviews from my Teachers</h2>
+
+                <article>
+                    <p>John doe was a brilliant student; always stood out with his assignments.</p>
+                    <footer>
+                    <p>Jane Doe</p>
+                    <p>Assistant Professor</p>
+                    </footer>
+                </article>
+
+                <article>
+                    <p>John doe was a brilliant student; always stood out with his assignments.</p>
+                    <footer>
+                    <p>Jane Doe</p>
+                    <p>Assistant Professor</p>
+                    </footer>
+                </article>
+
+                <article>
+                    <p>John doe was a brilliant student; always stood out with his assignments.</p>
+                    <footer>
+                    <p>Jane Doe</p>
+                    <p>Assistant Professor</p>
+                    </footer>
+                </article>
+            </section>
+        </main>
+        <footer>
+        <p>© all rights reserved 2026</p>
+        </footer>
+
+        <script>
+            const button = document.getElementById('theme-toggle');
+
+            button.addEventListener('click', function() {
+                document.body.classList.toggle('dark');
+
+                if (document.body.classList.contains('dark')) {
+                    button.textContent = '☀️ Light';
+                } else {
+                    button.textContent = '🌙 Dark';
+                }
+            });
+        </script>
+
+    </body>
+</html>
